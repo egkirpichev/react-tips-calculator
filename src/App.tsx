@@ -1,12 +1,17 @@
+import styled from "styled-components";
 import { Form } from "./components/Form/Form";
+import { Color } from "./types";
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <Wrapper>
 			<Form />
-     </div>
-  );
+		</Wrapper>
+ );
 }
+
+const Wrapper = styled.div`
+	background: ${Color.backround};
+`
 
 export default App;
