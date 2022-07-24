@@ -11,7 +11,7 @@ const App = () => {
 }
 
 const Wrapper = styled.div`
-	background: ${Color.backround};
+	background: ${Color.Backround};
 `
 
 export default App;
