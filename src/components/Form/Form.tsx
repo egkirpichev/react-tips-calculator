@@ -1,6 +1,7 @@
-import {Button, StyledForm, Subtitle, Title, Total} from "./styles"
+import {StyledForm, Subtitle, Title, Total} from "./styles"
 import { Input } from "../Input/Input";
 import { Select } from "../Select/Select";
+import { Button } from "../Button/Button";
 
 const Form = () => {
 	return (
@@ -18,7 +19,7 @@ const Form = () => {
 				]}
 			/>
 			<Total>Total: 0.00$</Total>
-			<Button type="submit">Calculate 🍻</Button>
+			<Button/>
 		</StyledForm>
 	)
 }
