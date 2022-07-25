@@ -19,21 +19,6 @@ const Subtitle = styled(Title)`
 	opacity: 0.57;
 `
 
-const BillInput = styled.input`
-	display: block;
-	width: 100%;
-	padding: 21px 0px;
-	margin-bottom: 33px;
-	font-size: 18px;
-	font-weight: 400;
-	color: rgba(117, 108, 108, 0.6);
-	opacity: 0.6;
-	border: none;
-	border-radius: 30px
-`
-
-const PersonsInput = styled(BillInput)`
-`
 const StyledSelect = styled(Select)`
 	.select__control {
     width: 100%;
@@ -88,4 +73,4 @@ const Button = styled.button`
 `
 
 
-export {StyledForm, Title, Subtitle, BillInput, PersonsInput, StyledSelect, Total, Button}
+export {StyledForm, Title, Subtitle, StyledSelect, Total, Button}

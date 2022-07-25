@@ -1,13 +1,13 @@
-import {BillInput, Button, PersonsInput, StyledForm, StyledSelect, Subtitle, Title, Total} from "./styles"
-import Select from "react-select";
+import {Button, StyledForm, StyledSelect, Subtitle, Title, Total} from "./styles"
+import { Input } from "../Input/Input";
 
 const Form = () => {
 	return (
 		<StyledForm>
 			<Title>Welcome to the App</Title>
 			<Subtitle>Let’s go calculate your tips</Subtitle>
-			<BillInput></BillInput>
-			<PersonsInput></PersonsInput>
+			<Input placeholder={"Enter bill"}></Input>
+			<Input placeholder={"Enter persons"}></Input>
 			<StyledSelect
 				classNamePrefix="select"
 				options = {[
