@@ -9,6 +9,14 @@ padding-top: 203px;
 background: ${Color.Wrapper};
 overflow: hidden;
 
+@media (max-width: 744px) {
+	padding-top: 236px;
+}
+
+@media (max-width: 414px) {
+	padding-top: 241px;
+}	
+
 &::before {
 	content: "";
 	position: absolute;
@@ -19,6 +27,14 @@ overflow: hidden;
 	background: ${Color.Green};
 	border-radius: 125px;
 	opacity: 0.31;
+
+	@media (max-width: 744px) {
+		transform: translate(-44px, -330px);
+	}
+
+	@media (max-width: 414px) {
+		transform: translate(-44px, -335px);
+}	
 }
 
 &::after {
@@ -32,6 +48,14 @@ overflow: hidden;
 	border-radius: 125px;
 	opacity: 0.31;
 	overflow: hidden;
+
+	@media (max-width: 744px) {
+		transform: translate(-108px,-839px)
+	}
+
+	@media (max-width: 414px) {
+		transform: translate(-108px,-844px)
+}	
 }
 
 `

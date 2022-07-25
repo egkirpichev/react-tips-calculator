@@ -1,4 +1,4 @@
-import {StyledForm, Subtitle, Title, Total} from "./styles"
+import {StyledForm, SubTitle, Title, Total} from "./styles"
 import { Input } from "../Input/Input";
 import { Select } from "../Select/Select";
 import { Button } from "../Button/Button";
@@ -7,7 +7,7 @@ const Form = () => {
 	return (
 		<StyledForm>
 			<Title>Welcome to the App</Title>
-			<Subtitle>Let’s go calculate your tips</Subtitle>
+			<SubTitle>Let’s go calculate your tips</SubTitle>
 			<Input placeholder={"Enter bill"}></Input>
 			<Input placeholder={"Enter persons"}></Input>
 			<Select
