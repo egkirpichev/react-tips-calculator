@@ -1,67 +1,57 @@
-import styled from "styled-components"
-import { Color } from "./types"
+import styled from "styled-components";
+import { Color } from "./types";
 
 const Wrapper = styled.div`
-max-width: 1512px;
-height: 100vh;
-margin: 0px auto;
-padding-top: 203px;
-background: ${Color.Wrapper};
-overflow: hidden;
+  max-width: 1512px;
+  height: 100vh;
+  margin: 0px auto;
+  background: ${Color.Wrapper};
+	overflow-x: hidden;
+  overflow-y: auto;
 
-@media (max-width: 744px) {
-	padding-top: 236px;
-}
+  @media (max-width: 744px) {
+    padding-top: 41px;
+  }
 
-@media (max-width: 414px) {
-	padding-top: 241px;
-}	
+  @media (max-width: 414px) {
+    padding-top: 46px;
+  }
 
-&::before {
-	content: "";
-	position: absolute;
-	transform: translate(-44px, -299px);
-	display: block;
-	width: 250px;
-	height: 250px;
-	background: ${Color.Green};
-	border-radius: 125px;
-	opacity: 0.31;
+  &::before {
+    content: "";
+    position: relative;
+    transform: translate(-10px, -100px);
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: ${Color.Green};
+    border-radius: 125px;
+    opacity: 0.31;
 
-	@media (max-width: 744px) {
-		transform: translate(-44px, -330px);
-	}
+    @media (max-width: 744px) {
+      transform: translate(-20px, -140px);
+    }
+  }
 
-	@media (max-width: 414px) {
-		transform: translate(-44px, -335px);
-}	
-}
+  &::after {
+    content: "";
+    position: relative;
+    transform: translate(-100px, -900px);
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: ${Color.Green};
+    border-radius: 125px;
+    opacity: 0.31;
 
-&::after {
-	content: "";
-	position: absolute;
-	transform: translate(-108px,-878px);
-	display: block;
-	width: 250px;
-	height: 250px;
-	background: ${Color.Green};
-	border-radius: 125px;
-	opacity: 0.31;
-	overflow: hidden;
-
-	@media (max-width: 744px) {
-		transform: translate(-108px,-839px)
-	}
-
-	@media (max-width: 414px) {
-		transform: translate(-108px,-844px)
-}	
-}
-
-`
+    @media (max-width: 744px) {
+      transform: translate(-110px, -870px);
+    }
+  }
+`;
 
 const Background = styled.div`
-background: ${Color.Backround};
-`
+  background: ${Color.Backround};
+`;
 
-export {Wrapper, Background}
+export { Wrapper, Background };
