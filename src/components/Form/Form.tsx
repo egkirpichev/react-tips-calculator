@@ -13,8 +13,6 @@ const Form = () => {
 
 	const [tip, setTip] = useState<ITipOption>({ value: 0.1, label: "10%" });
 
-	console.log(tip);
-	
 	const handleSelect = (option: SingleValue<ITipOption>): void => {
 		if (option) {
 			setTip(option)
