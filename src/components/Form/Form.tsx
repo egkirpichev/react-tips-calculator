@@ -1,6 +1,6 @@
 import { StyledForm, SubTitle, Title, Total } from "./styles";
 import { Input } from "../Input/Input";
-import { Select } from "../Select/Select";
+import { CustomSelect } from "../Select/CustomSelect";
 import { Button } from "../Button/Button";
 import { useInput } from "../../hooks/useInput";
 import { ChangeEvent, useState } from "react";
@@ -30,8 +30,7 @@ const Form = () => {
       <SubTitle>Let’s go calculate your tips</SubTitle>
       <Input placeholder={"Enter bill"} {...bill}></Input>
       <Input placeholder={"Enter persons"} {...persons}></Input>
-      <Select
-        classNamePrefix="select"
+      <CustomSelect
         options={[
           { value: 0.1, label: "10%" },
           { value: 0.15, label: "15%" },
