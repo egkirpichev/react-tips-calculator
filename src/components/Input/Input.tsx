@@ -11,6 +11,7 @@ export const Input = ({ placeholder, value, onChange }: IProps) => {
   return (
     <StyledInput
       placeholder={placeholder}
+			type="number"
       value={value}
       onChange={onChange}
     ></StyledInput>

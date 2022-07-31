@@ -1,7 +1,11 @@
 import { StyledButton } from "./styles";
 
-const Button = () => {
-  return <StyledButton type="submit">Calculate 🍻</StyledButton>;
+interface IProps {
+	isSubmitDisabled: boolean
+}
+
+const Button = ({isSubmitDisabled}: IProps) => {
+  return <StyledButton disabled={isSubmitDisabled} type="submit">Calculate 🍻</StyledButton>;
 };
 
 export { Button };

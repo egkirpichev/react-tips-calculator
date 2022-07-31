@@ -3,12 +3,18 @@ import { ITipOption, Color } from "../../types";
 
 
 interface IProps {
-  options: ITipOption[];
 	handleSelect: (option: SingleValue<ITipOption>) => void
+	tip: ITipOption
 }
 
-const CustomSelect = ({ options, handleSelect }: IProps) => {
+const CustomSelect = ({ handleSelect, tip }: IProps) => {
 
+	const tipOptions: ITipOption[] =[
+		{ value: 0.1, label: "10%" },
+		{ value: 0.15, label: "15%" },
+		{ value: 0.2, label: "20%" },
+	]
+	
 	const stylesConfig: StylesConfig<ITipOption, boolean>= {
 		control: (styles) => ({
 			...styles,
@@ -44,7 +50,7 @@ const CustomSelect = ({ options, handleSelect }: IProps) => {
 		})
 	}
 
-  return <Select options={options} isMulti={false} onChange={handleSelect} styles={stylesConfig}/>;
+  return <Select options={tipOptions} isMulti={false} onChange={handleSelect} styles={stylesConfig} defaultValue={tip}/>;
 };
 
 export { CustomSelect };
