@@ -3,13 +3,29 @@ import { Input } from "../Input/Input";
 import { Select } from "../Select/Select";
 import { Button } from "../Button/Button";
 import { useInput } from "../../hooks/useInput";
+import { ChangeEvent, useState } from "react";
+import { ITipOption } from "../../types";
 
 const Form = () => {
   const bill = useInput();
   const persons = useInput();
 
+	const [tip, setTip] = useState<ITipOption>({ value: 0.1, label: "10%" });
+
+	console.log(tip);
+	
+	const handleSelect = (option: ITipOption | null): void => {
+		if (option) {
+			setTip(option)
+		}
+	}
+
+  const handleSubmit = (event: ChangeEvent<HTMLFormElement>) => {
+    event.preventDefault();
+  };
+
   return (
-    <StyledForm>
+    <StyledForm onSubmit={handleSubmit}>
       <Title>Welcome to the App</Title>
       <SubTitle>Let’s go calculate your tips</SubTitle>
       <Input placeholder={"Enter bill"} {...bill}></Input>
@@ -17,10 +33,11 @@ const Form = () => {
       <Select
         classNamePrefix="select"
         options={[
-          { value: 10, label: "10%" },
-          { value: 15, label: "15%" },
-          { value: 20, label: "20%" },
+          { value: 0.1, label: "10%" },
+          { value: 0.15, label: "15%" },
+          { value: 0.2, label: "20%" },
         ]}
+				handleSelect={handleSelect}
       />
       <Total>Total: 0.00$</Total>
       <Button />
