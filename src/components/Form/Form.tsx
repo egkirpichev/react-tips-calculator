@@ -5,6 +5,7 @@ import { Button } from "../Button/Button";
 import { useInput } from "../../hooks/useInput";
 import { ChangeEvent, useState } from "react";
 import { ITipOption } from "../../types";
+import { SingleValue } from "react-select";
 
 const Form = () => {
   const bill = useInput();
@@ -14,7 +15,7 @@ const Form = () => {
 
 	console.log(tip);
 	
-	const handleSelect = (option: ITipOption | null): void => {
+	const handleSelect = (option: SingleValue<ITipOption>): void => {
 		if (option) {
 			setTip(option)
 		}

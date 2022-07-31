@@ -1,10 +1,10 @@
-import Select from "react-select";
+import Select, { SingleValue } from "react-select";
 import { ITipOption } from "../../types";
 
 
 interface IProps {
   options: ITipOption[];
-	handleSelect: (option: ITipOption | null) => void
+	handleSelect: (option: SingleValue<ITipOption>) => void
 }
 
 const CustomSelect = ({ options, handleSelect }: IProps) => {
