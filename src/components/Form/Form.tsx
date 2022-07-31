@@ -26,10 +26,10 @@ const Form = () => {
 		const personsAmount = Number(persons.value);
 		const tipAmount = tip.value;
 
-		return billAmount*personsAmount*(1+tipAmount)
+		return (billAmount*personsAmount*(1+tipAmount)).toFixed(2)
 	}
 
-	const [total, setTotal] = useState<number>(0.00)
+	const [total, setTotal] = useState<string>("0.00")
 
 	const [isSubmitDisabled, setisSubmitDisabled] = useState<boolean>(true)
 
