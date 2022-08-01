@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/react-tips-calculator/static/js/main.ce7ac6bf.js",
+    "main.js": "/react-tips-calculator/static/js/main.196e8bab.js",
     "index.html": "/react-tips-calculator/index.html",
     "static/media/circles.svg": "/react-tips-calculator/static/media/circles.ae45c84f63f2f98e1e207a6e0ba25b1f.svg",
-    "main.ce7ac6bf.js.map": "/react-tips-calculator/static/js/main.ce7ac6bf.js.map"
+    "main.196e8bab.js.map": "/react-tips-calculator/static/js/main.196e8bab.js.map"
   },
   "entrypoints": [
-    "static/js/main.ce7ac6bf.js"
+    "static/js/main.196e8bab.js"
   ]
 }
