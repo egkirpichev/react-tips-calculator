@@ -2,6 +2,8 @@
 
 Simple tip calculator app
 
+![image](https://user-images.githubusercontent.com/99477750/182233116-1c2f5832-dca7-4867-ab18-37d9e85dcb99.png)
+
 ### Built With
 
 * [![React][React.js]][React-url]
