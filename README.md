@@ -7,7 +7,7 @@ Simple tip calculator app
 * [![React][React.js]][React-url]
 * [![Styled-components][Styled.logo]][Styled-url]
 * [![Typescript][Typescript.logo]][Typescript-url]
-* [[React-select]][React-select-url]
+* [![React-select][React-select.logo]][React-select-url]
 
 ### Installation
 
