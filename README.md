@@ -7,7 +7,7 @@ Simple tip calculator app
 * [![React][React.js]][React-url]
 * [![Styled-components][Styled.logo]][Styled-url]
 * [![Typescript][Typescript.logo]][Typescript-url]
-* [![React-select]][React-select-url]
+* [[React-select]][React-select-url]
 
 ### Installation
 
@@ -36,8 +36,9 @@ Project Link: [https://github.com/egkirpichev/react-tips-calculator.git](https:/
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Styled.logo]: https://styled-components.com/logo.png
+[Styled.logo]: https://img.shields.io/badge/-Styled%20Components%20%F0%9F%92%85%F0%9F%8F%BE-orange
 [Styled-url]: https://styled-components.com/
-[React-select-url]: https://styled-components.com/
-[Typescript.logo]: hhttps://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg
+[React-select.logo]: https://img.shields.io/badge/-React%20select%20%F0%9F%93%9F-blue
+[React-select-url]: https://react-select.com/
+[Typescript.logo]: https://img.shields.io/badge/TS-Typescript-blue
 [Typescript-url]: https://www.typescriptlang.org/
