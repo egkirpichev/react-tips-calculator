@@ -1,17 +1,17 @@
-import { ChangeEventHandler } from "react";
+import { ChangeEvent } from "react";
 import { StyledInput } from "./styles";
 
 interface IProps {
   placeholder: string;
   value: string;
-  onChange: ChangeEventHandler<HTMLInputElement>;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Input = ({ placeholder, value, onChange }: IProps) => {
   return (
     <StyledInput
       placeholder={placeholder}
-			type="number"
+      type="number"
       value={value}
       onChange={onChange}
     ></StyledInput>

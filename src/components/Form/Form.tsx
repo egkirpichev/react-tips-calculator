@@ -10,43 +10,34 @@ import { SingleValue } from "react-select";
 const Form = () => {
   const bill = useInput();
   const persons = useInput();
+  const [tip, setTip] = useState<ITipOption>({ value: 0.1, label: "10%" });
+  const [total, setTotal] = useState<string>("0.00");
+  const [isSubmitDisabled, setisSubmitDisabled] = useState<boolean>(true);
 
-	const [tip, setTip] = useState<ITipOption>({value: 0.1, label: "10%"});
-	console.log(tip);
-	
+  const calculateTip = () => {
+    const billAmount = Number(bill.value);
+    const personsAmount = Number(persons.value);
+    const tipAmount = tip.value;
 
-	const handleSelect = (option: SingleValue<ITipOption>): void => {
-		if (option) {
-			setTip(option)
-		}
-	}
+    return (billAmount * personsAmount * (1 + tipAmount)).toFixed(2);
+  };
 
-	const calculateTip = () => {
-		const billAmount = Number(bill.value);
-		const personsAmount = Number(persons.value);
-		const tipAmount = tip.value;
-
-		return (billAmount*personsAmount*(1+tipAmount)).toFixed(2)
-	}
-
-	const [total, setTotal] = useState<string>("0.00")
-
-	const [isSubmitDisabled, setisSubmitDisabled] = useState<boolean>(true)
-
-	useEffect(()=> {
-		if (bill.value && persons.value) {
-			setisSubmitDisabled(false)
-		} else setisSubmitDisabled(true)
-	}, [bill, persons])
-
+  const handleSelect = (option: SingleValue<ITipOption>): void => {
+    if (option) {
+      setTip(option);
+    }
+  };
 
   const handleSubmit = (event: ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
-		setTotal(calculateTip())
+    setTotal(calculateTip());
   };
 
-	console.log(isSubmitDisabled);
-	
+  useEffect(() => {
+    if (bill.value && persons.value) {
+      setisSubmitDisabled(false);
+    } else setisSubmitDisabled(true);
+  }, [bill, persons]);
 
   return (
     <StyledForm onSubmit={handleSubmit}>
@@ -54,12 +45,9 @@ const Form = () => {
       <SubTitle>Let’s go calculate your tips</SubTitle>
       <Input placeholder={"Enter bill"} {...bill}></Input>
       <Input placeholder={"Enter persons"} {...persons}></Input>
-      <CustomSelect
-				handleSelect={handleSelect}
-				tip={tip}
-      />
+      <CustomSelect handleSelect={handleSelect} tip={tip} />
       <Total>Total: {total}$</Total>
-      <Button isSubmitDisabled={isSubmitDisabled}/>
+      <Button isSubmitDisabled={isSubmitDisabled} />
     </StyledForm>
   );
 };

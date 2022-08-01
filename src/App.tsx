@@ -5,7 +5,7 @@ const App = () => {
   return (
     <Background>
       <Wrapper>
-	      <Form />
+        <Form />
       </Wrapper>
     </Background>
   );

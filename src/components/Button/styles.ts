@@ -9,15 +9,17 @@ const StyledButton = styled.button`
   color: ${Color.White};
   background: ${Color.Turquoise};
   border: none;
- 	opacity: ${props => props.disabled ? 0.3 : 1};
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 
   &:hover {
-    background: ${props => props.disabled ? Color.Turquoise : Color.DarkTurquoise};
-		cursor: ${props => props.disabled ? "not-allowed" : "pointer"}
+    background: ${(props) =>
+      props.disabled ? Color.Turquoise : Color.DarkTurquoise};
+    cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   }
 
   &:active {
-    box-shadow: ${props => props.disabled ? "none": `inset 0px 0px 10px ${Color.Black}`};
+    box-shadow: ${(props) =>
+      props.disabled ? "none" : `inset 0px 0px 10px ${Color.Black}`};
   }
 `;
 
