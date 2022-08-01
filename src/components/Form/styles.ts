@@ -10,7 +10,7 @@ const StyledForm = styled.form`
   } ;
 `;
 const Title = styled.h1`
-  margin-bottom: 45px;
+  margin: 0px 0px 45px;
   text-align: center;
   font-size: 40px;
   font-weight: 400;

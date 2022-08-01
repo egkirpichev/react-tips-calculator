@@ -1,11 +1,11 @@
-import { Background, Wrapper } from "./styles";
+import { Background, Wrapper } from "./ui/base";
 import { Form } from "./components/Form/Form";
 
 const App = () => {
   return (
     <Background>
       <Wrapper>
-        <Form />
+	      <Form />
       </Wrapper>
     </Background>
   );
