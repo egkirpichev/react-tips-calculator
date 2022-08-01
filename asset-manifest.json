@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/egkirpichev/react-tips-calculator/static/js/main.ce7ac6bf.js",
+    "index.html": "/egkirpichev/react-tips-calculator/index.html",
+    "static/media/circles.svg": "/egkirpichev/react-tips-calculator/static/media/circles.ae45c84f63f2f98e1e207a6e0ba25b1f.svg",
+    "main.ce7ac6bf.js.map": "/egkirpichev/react-tips-calculator/static/js/main.ce7ac6bf.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ce7ac6bf.js"
+  ]
+}
